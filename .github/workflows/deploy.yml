@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '14.x'
       - name: Install packages
-        run: npm run install
+        run: npm install
       - name: Build application
         run: npm run export
       - name: Deploy to ghpages branch
