@@ -1,4 +1,4 @@
 module.exports = {
-    assetPrefix: process.NODE_ENV==="production" ? "/expenses-tracker-react/" : "/",
-    basePath: process.NODE_ENV==="production" ? "/expenses-tracker-react/" : "", 
+    assetPrefix: process.env.CI ? "/expenses-tracker-react/" : "/",
+    basePath: process.env.CI ? "/expenses-tracker-react/" : "", 
 }
