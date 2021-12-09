@@ -55,7 +55,7 @@ export default function ExpensesView() {
 					{exp.name} ({(exp.used / exp.budget * 100).toFixed()}%)
 				</h5>
 				{inEdit !== exp.name ?
-					<span className="flex">Used: {formatter.format(exp.used)} <img onClick={() => setInEdit(exp.name)} className="ml-1" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
+					<span className="flex">Used: {formatter.format(exp.used)} <img onClick={() => setInEdit(exp.name)} className="ml-1" alt="E" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
 					:
 					<UsedExpenseForm value={exp.used} onSubmit={(newUsed) => { setInEdit(""); updateUsedCustomExpense(exp.name, newUsed) }} />
 				}
@@ -73,7 +73,7 @@ export default function ExpensesView() {
 					</span>
 				</h5>
 				{inEdit !== "transportation" ?
-					<span className="flex">Used: {processedValues.myExpenses.transportation.used} <img onClick={() => setInEdit("transportation")} className="ml-1" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
+					<span className="flex">Used: {processedValues.myExpenses.transportation.used} <img onClick={() => setInEdit("transportation")} className="ml-1" alt="E" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
 					:
 					<UsedExpenseForm value={context.expenses.transportation.used} onSubmit={(newUsed) => { setInEdit(""); updateUsedExpense("transportation", newUsed) }} />
 				}
@@ -87,7 +87,7 @@ export default function ExpensesView() {
 					</span>
 				</h5>
 				{inEdit !== "housing" ?
-					<span className="flex">Used: {processedValues.myExpenses.housing.used} <img onClick={() => setInEdit("housing")} className="ml-1" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
+					<span className="flex">Used: {processedValues.myExpenses.housing.used} <img onClick={() => setInEdit("housing")} className="ml-1" alt="E" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
 					:
 					<UsedExpenseForm value={context.expenses.housing.used} onSubmit={(newUsed) => { setInEdit(""); updateUsedExpense("housing", newUsed) }} />
 				}
@@ -101,7 +101,7 @@ export default function ExpensesView() {
 					</span>
 				</h5>
 				{inEdit !== "food" ?
-					<span className="flex">Used: {processedValues.myExpenses.food.used} <img onClick={() => setInEdit("food")} className="ml-1" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
+					<span className="flex">Used: {processedValues.myExpenses.food.used} <img onClick={() => setInEdit("food")} className="ml-1" alt="E" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
 					:
 					<UsedExpenseForm value={context.expenses.food.used} onSubmit={(newUsed) => { setInEdit(""); updateUsedExpense("food", newUsed) }} />
 				}
@@ -115,7 +115,7 @@ export default function ExpensesView() {
 					</span>
 				</h5>
 				{inEdit !== "amenities" ?
-					<span className="flex">Used: {processedValues.myExpenses.amenities.used} <img onClick={() => setInEdit("amenities")} className="ml-1" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
+					<span className="flex">Used: {processedValues.myExpenses.amenities.used} <img onClick={() => setInEdit("amenities")} className="ml-1" alt="E" src="/images/icons8-pencil-64.png" height="16" width="16" /></span>
 					:
 					<UsedExpenseForm value={context.expenses.amenities.used} onSubmit={(newUsed) => { setInEdit(""); updateUsedExpense("amenities", newUsed) }} />
 				}
