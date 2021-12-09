@@ -20,6 +20,8 @@ jobs:
           node-version: '14.x'
       - name: Install packages
         run: npm install
+      - name: Setup env
+        run: export NODE_ENV=production
       - name: Build application
         run: npm run export
       - name: Deploy to ghpages branch
