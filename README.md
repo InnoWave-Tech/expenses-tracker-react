@@ -5,7 +5,7 @@ This application was developed to help user manage their expenses. It offers the
 1. Tracking of common expense sources Transportation, Housing, Food and Amenities
 2. Tracking of total expenses and total budget
 3. Updating of used money
-4. Creation of custom expense sources
+4. Creation of custom expense sources that functionally should be similar to the default common expenses
 
 <hr>
 
