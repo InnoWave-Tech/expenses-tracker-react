@@ -17,15 +17,14 @@ const defaultContext = {
 			used: 143,
 			budget: 360
 		},
-		amenities:
-		{
+		amenities: {
 			starred: false,
 			used: 92,
 			budget: 80
 		}
 	},
 	customExpenses: [],
-	userName:"John Doe",
+	userName: "John Doe"
 };
 const ExpensesContext = React.createContext(defaultContext);
 
@@ -34,23 +33,25 @@ export function ContextProvider(props) {
 	const [customExpenses, setCustomExpenses] = React.useState(defaultContext.customExpenses);
 	const [userName, setUserName] = React.useState(defaultContext.userName);
 	return (
-		<ExpensesContext.Provider value={{
-			expenses,
-			customExpenses,
-			userName,
-			setExpenses: (allExpenses)=>{
-				setExpenses(allExpenses)
-			},
-			setCustomExpenses: (allCustomExpenses) => {
-				setCustomExpenses(allCustomExpenses);
-			}
-		}} >
+		<ExpensesContext.Provider
+			value={{
+				expenses,
+				customExpenses,
+				userName,
+				setExpenses: (allExpenses) => {
+					setExpenses(allExpenses);
+				},
+				setCustomExpenses: (allCustomExpenses) => {
+					setCustomExpenses(allCustomExpenses);
+				}
+			}}
+		>
 			{props.children}
 		</ExpensesContext.Provider>
-	)
+	);
 }
 
-export function useExpensesContext(){
+export function useExpensesContext() {
 	const state = React.useContext(ExpensesContext);
 	return state;
 }
