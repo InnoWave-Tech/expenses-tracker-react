@@ -16,7 +16,7 @@ export default function UsedExpenseForm(props) {
 					onChange={(e) => setUsed(e.target.value)}
 				/>
 			</label>
-			<button type="submit" className="bg-indigo-600 text-white"><img src={`${process.env.CI ? "/expenses-tracker-react" : ""}/images/icons8-save-32.png`} width="16px" height="16px"/></button>
+			<button type="submit" alt="S" className="bg-indigo-600 text-white"><img src={`${process.env.CI ? "/expenses-tracker-react" : ""}/images/icons8-save-32.png`} width="16px" height="16px"/></button>
 		</form>
 	)
 }
