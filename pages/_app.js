@@ -1,5 +1,4 @@
 import 'tailwindcss/tailwind.css'
-import '@/css/tailwind.css'
 import AppLayout from '../src/components/layout/AppLayout'
 import { ContextProvider } from '../src/context/Expenses'
 
