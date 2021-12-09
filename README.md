@@ -1,4 +1,4 @@
-# expenses tracker
+# expenses tracker [![CI](https://github.com/InnoWave-Tech/expenses-tracker-react/actions/workflows/deploy.yml/badge.svg)](https://github.com/InnoWave-Tech/expenses-tracker-react/actions/workflows/deploy.yml)
 
 This application was developed to help user manage their expenses. It offers the following features:
 
